@@ -17,11 +17,13 @@ public class DeckTest {
     @BeforeAll
     static void init () {
         deckService = new DeckService();
+        System.out.println("BeforeAll");
     }
 
     @BeforeEach
     void createNewDeck () {
         deck = new Deck(deckService.getNewDeck().getCards());
+        System.out.println("BeforeEach");
     }
 
     @Test

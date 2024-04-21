@@ -67,5 +67,6 @@ public class GamePlayTest extends AbstractTest {
     void newGame() {
         game.getGamer().newGame();
         game.getCasino().newGame();
+        System.out.println("AfterEach");
     }
 }
